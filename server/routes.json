@@ -1,0 +1,17 @@
+{
+  "/api/proyectos/activos": "/api/projects?active=true",
+  "/api/proyectos/inactivos": "/api/projects?active=false",
+  "/api/proyectos/orden/:campo/:dir": "/api/projects?_sort=:campo&_order=:dir",
+  "/api/proyectos/con-tareas": "/api/projects?_embed=tasks",
+  "/api/proyectos/:id/con-tareas": "/api/projects/:id?_embed=tasks",
+
+  "/api/proyectos": "/api/projects",
+  "/api/proyectos/:id": "/api/projects/:id",
+
+  "/api/tareas/proyecto/:id": "/api/tasks?projectId=:id",
+  "/api/tareas/estado/hechas": "/api/tasks?done=true",
+  "/api/tareas/estado/pendientes": "/api/tasks?done=false",
+  "/api/tareas/con-proyecto": "/api/tasks?_expand=project",
+  "/api/tareas": "/api/tasks",
+  "/api/tareas/:id": "/api/tasks/:id"
+}
