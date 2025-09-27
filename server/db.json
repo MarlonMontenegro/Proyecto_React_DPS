@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {
+      "name": "Proyecto 1",
+      "description": "Demo actualizado",
+      "active": false,
+      "createdAt": "2025-09-27T21:09:10.336Z",
+      "updatedAt": "2025-09-27T21:47:42.544Z",
+      "id": 1
+    },
+    {
+      "name": "Proyecto 2",
+      "description": "Prueba",
+      "active": true,
+      "createdAt": "2025-09-27T21:47:13.176Z",
+      "updatedAt": "2025-09-27T21:47:13.176Z",
+      "id": 2
+    }
+  ],
+  "tasks": []
+}
