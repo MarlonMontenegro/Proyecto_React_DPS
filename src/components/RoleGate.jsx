@@ -1,5 +1,5 @@
 "use client";
-import { useAuth } from "@/contexts/AuthContext";
+import { useAuth } from "@/contexts/AuthContext.jsx";
 
 export default function RoleGate({ allow = [], children }) {
   const { user } = useAuth();
