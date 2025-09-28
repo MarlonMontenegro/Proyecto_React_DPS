@@ -1,6 +1,7 @@
 import "./globals.css";
 import { AuthProvider } from "@/contexts/AuthContext.jsx";
 
+
 export const metadata = {
   title: "Project Manager",
   description: "Gestor de proyectos con Next.js",

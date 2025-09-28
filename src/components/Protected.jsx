@@ -3,6 +3,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext.jsx";
 
+
 export default function Protected({ children }) {
   const { isAuthenticated } = useAuth();
   const router = useRouter();
