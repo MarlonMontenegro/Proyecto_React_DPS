@@ -1,5 +1,6 @@
 import "./globals.css";
-import { AuthProvider } from "@/contexts/AuthContext";
+import { AuthProvider } from "@/contexts/AuthContext.jsx";
+
 
 export const metadata = {
   title: "Project Manager",

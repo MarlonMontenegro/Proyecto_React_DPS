@@ -1,6 +1,7 @@
 const jsonServer = require("json-server");
 const path = require("path");
 const { registerProjects } = require("./middlewares/projects");
+const { registerTasks } = require("./middlewares/tasks");
 
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, "db.json")); // { projects: [], tasks: [] }
@@ -19,6 +20,7 @@ server.use((req, _res, next) => {
 server.use(jsonServer.rewriter(require("./routes.json")));
 
 registerProjects(server, router);
+registerTasks(server, router);
 
 server.use("/api", router);
 
