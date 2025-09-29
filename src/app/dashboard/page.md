@@ -271,23 +271,7 @@ export default function DashboardPage() {
                     </div>
                     <div className="row-actions">
                       <button className="primary" onClick={() => onEditProject(p)}>Editar</button>
-                      <button
-                        className="danger"
-                        onClick={async () => {
-                          if (confirm(`¿Terminar/eliminar el proyecto "${p.title}"?`)) {
-                            try {
-                              await apiDeleteProject(p.id); 
-                              if (editingId === p.id) onCancelEdit();
-                              await loadProjects();
-                            } catch (e) {
-                              console.error(e);
-                              alert("No se pudo eliminar el proyecto");
-                            }
-                          }
-                        }}
-                      >
-                        Terminar
-                      </button>
+                     
                     </div>
                   </li>
                 ))}
