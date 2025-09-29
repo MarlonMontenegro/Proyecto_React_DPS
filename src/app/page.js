@@ -105,13 +105,27 @@ export default function HomePage() {
       >
         <p>© {new Date().getFullYear()} Pagina de proyectos y tareas — Todos los derechos reservados</p>
         <div style={{ marginTop: "0.8rem" }}>
-          <a href="https://facebook.com" target="_blank" style={{ marginRight: 12 }}>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginRight: 12 }}
+          >
             Facebook
           </a>
-          <a href="https://twitter.com" target="_blank" style={{ marginRight: 12 }}>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginRight: 12 }}
+          >
             Twitter
           </a>
-          <a href="https://linkedin.com" target="_blank">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
         </div>
